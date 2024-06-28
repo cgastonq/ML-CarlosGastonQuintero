@@ -4,7 +4,8 @@ const app = express();
 
 app.use ( express.static("./public") );
 
-const port=3030;
+const port= process.env.PORT || 3000;
+
 app.listen(port, () => console.log(`servidor corriendo en el puerto ${port}`));
 
 app.get("/",(req, res)=>{

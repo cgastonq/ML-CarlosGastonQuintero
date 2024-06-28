@@ -84,7 +84,6 @@ main{
     display: flex;
     flex-direction: row;
 }
-
 .product-delivery-icon {
     width: 30px;
     height: 30px;
@@ -97,7 +96,6 @@ main{
     padding: 0px;
     box-sizing: border-box;
 }
-
 .product-desc-box > .product-delivery-icon {
     display: block;
     font-size: 16px;
@@ -124,11 +122,6 @@ main{
     align-content: center;
     align-items: flex-start;
 }
-main>section>article>div>div {
-    display: flex;
-    flex-direction: row;
-}
-
 .imagen-article { 
     width: 100%;
 }

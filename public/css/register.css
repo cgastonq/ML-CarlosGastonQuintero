@@ -1,0 +1,245 @@
+paleta {
+    color : #EAC926;
+    color : #03264C;
+    color : #1259c3;
+    color : #666;
+    color : #ebebeb;
+    color : #39b54a;
+}
+
+/*------------------- HTML -----------------*/
+html {
+    font-family: "roboto";
+    font-size: 12px;
+}
+
+/*------------------- BODY -----------------*/
+body { 
+    background-color: #ededed; 
+    margin: 0%;
+}
+
+/*----------------- HEADER -----------------*/
+header { 
+    background-color: #EAC926; 
+    padding: 5px 0px;
+}
+.first-box { 
+    width : 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.imagen-box { 
+    width : 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.search-box {
+    display: flex ;
+    width: 30%;
+}
+.search {
+    width : 100%;
+}
+.button-search {
+    padding: 1px 3px 1px;
+    margin-left: 3px;
+}
+.menus-box {
+    display: flex;
+    width: 100%;
+}
+.first-menus {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    margin-right: 10%;
+}
+.second-menus {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin-left: 10%;
+    margin-right: 2%;
+}
+.menus {
+    text-decoration: none;
+    color:black;
+    font-size: 1.2em;
+}
+.menus:hover {
+    text-decoration: underline;
+}
+.burger-menu { 
+    color :#ebebeb;
+    margin : 0 auto;
+    background-color: #1259c3;
+    width: 17px;
+    height: 20px;
+    padding-top: 5px;
+    padding-left: 8px;
+    border-radius: 5px;
+}
+
+/*------------------ MAIN ------------------*/
+.h1-h3 {
+    margin: 2%;
+}
+.cuadros-login {
+    margin: 2%;
+    text-align: start;
+    padding-left: 1%;
+    padding-right: 2%;
+    width: -webkit-fill-available;
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+}
+.style-label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 2%;
+}
+.style-label-r {
+    display: flex;
+    margin: 0% 10% 0% 2%;
+    align-items: center;
+    width: 16%;
+}
+.style-label-cb {
+    display: flex;
+    margin: 0% 2%;
+    align-items: center;
+    width: 100%;
+}
+.radio-checkbox {
+    margin: 0% 10% 0% 0%;
+}
+.style-div-botones {
+    display: flex;
+    margin: 0% 20% 2% 20%;
+}
+.boton-aceptar {
+    color :#ebebeb; 
+    background-color: #2968c8; 
+    border-radius: 5px; 
+    margin: 2% 5% 2% 5%;
+    border: none;
+    font-weight: bold;
+    width: 50%;
+    height: 35px;
+    cursor: pointer;
+    transition: background-color 500ms;
+}
+.boton-aceptar:hover{
+    background-color: #0022AA;
+}
+
+/*------------------ FOOTER ------------------*/
+footer { 
+    background-color: #ffffff; 
+    padding: 1%;
+}
+.icon-footer {
+    display: flex;
+    justify-content: center;
+    margin: 0 50% 1%;
+    color: blue; 
+    font-size: 2em;
+    transition: color 700ms;
+}
+.config-h4 { 
+    text-align: center; 
+    height: 0; 
+    font-size: 16px; 
+    margin-top: auto; 
+}
+.config-p {
+    text-align: center;
+    padding: 0 10%;
+}
+
+/*------------------ MEDIA QUERYS ------------------*/
+@media (min-width : 361px) and (max-width : 768px){
+    .burger-menu { 
+        display: none;
+    }
+    .config-nav {
+        display: inline;
+    }
+    .article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        flex: 40%;
+    }
+    .menus {
+        color : black;
+        text-decoration: none;
+    }
+    .descripciones { 
+        display: inline;
+    }
+}
+
+@media (min-width : 769px){
+    .burger-menu { 
+        display: none;
+    }
+    .config-nav {
+        display: inline;
+    }
+    .article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        flex: 20%;
+    }
+    .menus {
+        color : black;
+        text-decoration: none;
+    }
+    .footer-for-desktop{
+        display: flex;
+        gap: 2%;
+    }
+    .icon-footer:hover{
+        color: #eac926;
+        cursor: pointer;
+    }
+    .descripciones { 
+        display: inline;
+    }
+}
+
+@media (max-width : 360px){
+    .imagen-box { 
+        width : 60%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .search-box {
+        display: flex ;
+        width: 50%;
+    }
+    .first-box {
+        width : 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .first-menus {
+        display: none;
+    }
+    .second-menus {
+        display: none;
+    }
+}

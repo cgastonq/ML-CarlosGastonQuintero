@@ -1,0 +1,284 @@
+paleta {
+    color : #EAC926;
+    color : #03264C;
+    color : #1259c3;
+    color : #666;
+    color : #ebebeb;
+    color : #39b54a;
+}
+
+/*------------------- HTML -----------------*/
+html {
+    font-family: "roboto";
+    font-size: 12px;
+}
+
+/*------------------ BODY ------------------*/
+body {
+    background-color: #ededed; 
+    margin: 0%;
+}
+
+/*----------------- HEADER -----------------*/
+header {
+    background-color: #EAC926;
+    padding: 5px 0px;
+}
+.first-box {
+    width : 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.imagen-box { 
+    width : 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.search-box {
+    display: flex ;
+    width: 30%;
+}
+.search {
+    width : 100%;
+}
+.button-search {
+    padding: 1px 3px 1px;
+    margin-left: 3px;
+}
+.burger-menu { 
+    color :#ebebeb;
+    margin : 0 auto;
+    background-color: #1259c3;
+    width: 17px;
+    height: 20px;
+    padding-top: 5px;
+    padding-left: 8px;
+    border-radius: 5px;
+}
+
+/*----------------- BANNER -----------------*/
+.imagen-banner {
+    width: 100%;
+}
+
+/*------------------ MAIN ------------------*/
+
+.article {
+    margin: 10px;
+    flex: 100%;
+}
+main>section>article>div {
+    background-color : white;
+    padding: 10%;
+    border-top: 1px solid #ebebeb;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-delivery-icon {
+    width: 30px;
+    height: 30px;
+    background-color : white;
+    color: #39b54a;
+    border-color: #39b54a;
+    border-style: solid;
+    border-radius: 100%;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.product-desc-box > .product-delivery-icon {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+.product-desc-box {
+    position: relative;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+}
+main>section>article>div>div {
+    display: flex;
+    flex-direction: row;
+}
+
+footer { 
+    background-color: #ffffff;
+    padding-top: 3%;
+}
+div>h4 { 
+    text-align: center; 
+    height: 0; font-size: 16px; 
+    margin-top: auto; 
+}
+
+
+.imagen-body { 
+    width: 100%;
+}
+.imagen-body:hover{
+    cursor: pointer;
+
+}
+.boton { font-size: 20px; }
+
+html {
+    font-family: "roboto";
+    font-size: 12px;
+}
+
+.titulares { font-size: 24px; }
+
+.precios { 
+    font-size: 18px;
+    font-weight: bold; 
+    margin: 0;
+    width: 100%;
+}
+
+.descuentos { 
+    font-size: 16px;
+    color: green;
+    margin: 0;
+    width: 100%;
+    padding: 2px 3px 0px;
+ }
+
+.descripciones { 
+    display: none;
+    font-size: 16px;
+    visibility: hidden;
+    margin: 10% 0%;
+}
+
+/*------------------ FOOTER ------------------*/
+footer { 
+    background-color: #ffffff; 
+    padding: 1%;
+}
+.icon-footer {
+    display: flex;
+    justify-content: center;
+    margin: 0 50% 1%;
+    color: blue; 
+    font-size: 2em;
+    transition: color 700ms;
+}
+.config-h4 { 
+    text-align: center; 
+    height: 0; 
+    font-size: 16px; 
+    margin-top: auto; 
+}
+.config-p {
+    text-align: center;
+    padding: 0 10%;
+}
+
+/*------------------ MEDIA QUERYS ------------------*/
+@media (min-width : 360px) and (max-width : 768px){
+    .nav-config {
+        display: none;
+    }
+    .article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        flex: 40%;
+        width: 100%;
+    }
+    .article:hover {
+        box-shadow: 5px 5px 30px #274BBD;
+    }
+    .descripciones { 
+        display: inline;
+        visibility: visible;
+    }
+}
+
+@media (min-width : 769px){
+    .descripciones { 
+        display: inline;
+    }
+    .article {
+        flex: 22%;
+        width: 100%;
+    }
+    .article .product-delivery-icon {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        transition: all 700ms;
+    }
+    .article:hover {
+        box-shadow: 5px 5px 30px #274BBD;
+    }
+    .article:hover .descripciones{
+        visibility: visible;
+    }
+    body>header>nav {
+        display: inline;
+    }
+    body>header>nav>a {
+        color : black;
+        text-decoration: none;
+    }
+    .menus-box {
+        display: flex;
+        width: 100%;
+    }
+    .first-menus {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 50%;
+        margin-right: 10%;
+    }
+    .second-menus {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 50%;
+        margin-left: 10%;
+        margin-right: 2%;
+    }
+    .menus {
+        text-decoration: none;
+        color:black;
+        font-size: 1.2em;
+    }
+    .menus:hover {
+        text-decoration: underline;
+    }
+    .burger-menu { 
+        display: none;
+    }
+    .icon-footer:hover{
+        color: #eac926;
+        cursor: pointer;
+    }
+    .footer-desktop{
+        display: flex;
+        gap: 2%;
+    }
+    .article:hover .product-delivery-icon {
+        transform: rotate(-90deg);
+    }
+}

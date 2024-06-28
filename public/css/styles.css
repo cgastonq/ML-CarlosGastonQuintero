@@ -47,6 +47,12 @@ header {
     padding: 1px 3px 1px;
     margin-left: 3px;
 }
+.first-menus{
+    display: none;
+}
+.second-menus{
+    display: none;
+}
 .burger-menu { 
     color :#ebebeb;
     margin : 0 auto;
@@ -64,17 +70,19 @@ header {
 }
 
 /*------------------ MAIN ------------------*/
-
+main{
+    margin: 3%;
+}
 .article {
     margin: 10px;
     flex: 100%;
 }
-main>section>article>div {
+.article-desc-box {
     background-color : white;
-    padding: 10%;
-    border-top: 1px solid #ebebeb;
+    padding: 10% 3%;
+    border-top: 1px solid white;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .product-delivery-icon {
@@ -105,6 +113,8 @@ main>section>article>div {
 }
 .product-desc-box {
     position: relative;
+    background-color: white;
+    padding: 3%;
 }
 .container {
     display: flex;
@@ -119,48 +129,28 @@ main>section>article>div>div {
     flex-direction: row;
 }
 
-footer { 
-    background-color: #ffffff;
-    padding-top: 3%;
-}
-div>h4 { 
-    text-align: center; 
-    height: 0; font-size: 16px; 
-    margin-top: auto; 
-}
-
-
-.imagen-body { 
+.imagen-article { 
     width: 100%;
 }
-.imagen-body:hover{
+.imagen-article:hover{
     cursor: pointer;
-
 }
-.boton { font-size: 20px; }
-
-html {
-    font-family: "roboto";
-    font-size: 12px;
+.titulares { 
+    font-size: 24px;
 }
-
-.titulares { font-size: 24px; }
-
 .precios { 
     font-size: 18px;
     font-weight: bold; 
     margin: 0;
     width: 100%;
 }
-
 .descuentos { 
     font-size: 16px;
     color: green;
     margin: 0;
     width: 100%;
     padding: 2px 3px 0px;
- }
-
+}
 .descripciones { 
     display: none;
     font-size: 16px;
@@ -194,7 +184,10 @@ footer {
 
 /*------------------ MEDIA QUERYS ------------------*/
 @media (min-width : 360px) and (max-width : 768px){
-    .nav-config {
+    .first-menus{
+        display: none;
+    }
+    .second-menus{
         display: none;
     }
     .article {
@@ -219,8 +212,12 @@ footer {
         flex: 22%;
         width: 100%;
     }
-    .article .product-delivery-icon {
+    .article {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        flex: 20%;
+        width: 100%;
+    }
+    .article .product-delivery-icon {
         transition: all 700ms;
     }
     .article:hover {
@@ -228,13 +225,6 @@ footer {
     }
     .article:hover .descripciones{
         visibility: visible;
-    }
-    body>header>nav {
-        display: inline;
-    }
-    body>header>nav>a {
-        color : black;
-        text-decoration: none;
     }
     .menus-box {
         display: flex;

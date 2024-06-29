@@ -53,15 +53,20 @@ header {
 .second-menus{
     display: none;
 }
-.burger-menu { 
+.burger-menu {
     color :#ebebeb;
-    margin : 0 auto;
+    margin : auto;
     background-color: #1259c3;
-    width: 17px;
-    height: 20px;
-    padding-top: 5px;
-    padding-left: 8px;
+    width: 22px;
+    height: 22px;
+    padding: 5px 8px;
     border-radius: 5px;
+}
+.fas {
+    padding-left: 3px;
+    padding-top: 1px;
+    font-weight: 900;
+    font-size: 20px;
 }
 
 /*----------------- BANNER -----------------*/
@@ -191,34 +196,20 @@ footer {
     .article:hover {
         box-shadow: 5px 5px 30px #274BBD;
     }
+    .precios { 
+        font-size: 16px;
+    }
+    .descuentos { 
+        font-size: 14.5px;
+    }
     .descripciones { 
         display: inline;
         visibility: visible;
+        font-size: 13.4px;
     }
 }
 
 @media (min-width : 769px){
-    .descripciones { 
-        display: inline;
-    }
-    .article {
-        flex: 22%;
-        width: 100%;
-    }
-    .article {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        flex: 20%;
-        width: 100%;
-    }
-    .article .product-delivery-icon {
-        transition: all 700ms;
-    }
-    .article:hover {
-        box-shadow: 5px 5px 30px #274BBD;
-    }
-    .article:hover .descripciones{
-        visibility: visible;
-    }
     .menus-box {
         display: flex;
         width: 100%;
@@ -253,15 +244,37 @@ footer {
     .burger-menu { 
         display: none;
     }
-    .icon-footer:hover{
-        color: #eac926;
-        cursor: pointer;
+    .article {
+        flex: 22%;
+        width: 100%;
     }
-    .footer-desktop{
-        display: flex;
-        gap: 2%;
+    .article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        flex: 20%;
+        width: 100%;
+    }
+    .article .product-delivery-icon {
+        transition: all 700ms;
     }
     .article:hover .product-delivery-icon {
         transform: rotate(-90deg);
+    }
+    .article:hover {
+        box-shadow: 5px 5px 30px #274BBD;
+    }
+    .article:hover .descripciones {
+        visibility: visible;
+    }
+    .descripciones { 
+        display: inline;
+        font-size: 14.9px;
+    }
+    .footer-for-desktop {
+        display: flex;
+        gap: 2%;
+    }
+    .icon-footer:hover {
+        color: #eac926;
+        cursor: pointer;
     }
 }
